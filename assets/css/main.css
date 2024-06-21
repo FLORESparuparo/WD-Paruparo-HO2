@@ -1,16 +1,25 @@
 main {
-    align-content: center;
-    
+
     & .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 5rem;
+
+        margin-block: 10rem 8rem;
+        margin-inline: 24rem;
+        padding-block: 1.5rem;
+        box-shadow: 0 0 2rem peachpuff;
+        border-radius: 8rem;
 
         & .text {
             display: flex;
             flex-direction: column;
-            align-items: center;
             color: white;
 
             & * {
                 margin: 0;
+                text-align: center;
             }
 
             & .title {
@@ -23,6 +32,29 @@ main {
 
             & .description {
                 margin-top: 4rem;
+            }
+        }
+
+        & .navigation {
+            display: flex;
+            column-gap: 4rem;
+
+            & .link {
+                padding: 1rem;
+                color: black;
+                text-decoration: none;
+                background-color: peachpuff;
+                border-radius: 16rem;
+                transition: 0.3s;
+
+                &:hover {
+                    background-color:burlywood;
+                    transform: scale(1.2);
+                }
+
+                &:active {
+                    transform: scale(1);
+                }
             }
         }
     }

@@ -22,9 +22,18 @@ footer {
 
                 & .link {
                     height: 2rem;
+                    transition: .3s;
 
                     & .icon {
                         height: inherit;
+                    }
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+
+                    &:active {
+                        transform: scale(1);
                     }
                 }
             }

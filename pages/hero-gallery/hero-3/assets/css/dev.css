@@ -1,0 +1,15 @@
+body {
+    display: grid;
+
+    height: 100vh;
+    margin: 0;
+
+    background: url("../img/114234634_p5.jpg") no-repeat center center/cover;
+}
+
+/* dev  *//*
+* {
+    border-color: rgba(255, 0, 0, 0.5);
+    border-width: 1px;
+    border-style: dashed;
+}

@@ -1,0 +1,19 @@
+footer {
+    justify-self: center;
+
+    & .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-top: 4rem;
+
+        background-color:#ffffff40;
+        border-radius: 4rem;
+        box-shadow: 0 0 1rem 1rem #ffffff40;
+
+        & p {
+            margin: 0;
+        }
+    }
+}

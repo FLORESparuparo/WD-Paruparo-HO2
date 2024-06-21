@@ -1,0 +1,48 @@
+main {
+
+    & .container {
+        display: grid;
+        grid-template: auto auto / auto auto;
+
+        & .logo {
+            max-width: 50%;
+        }
+
+        & .classes {
+            display: flex;
+
+            backdrop-filter: blur(2px);
+            border-radius: 2rem;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #00000069;
+
+            & .card {
+                height: 12rem;
+                width: 8rem;
+                background-color: white;
+                border-radius: 2rem;
+
+                & .button {
+                    text-decoration: none;
+
+                    &:nth-of-type(1) {
+
+                    }
+                }
+            }
+
+            & {
+                
+            }
+        }
+
+        & .stores {
+
+        }
+
+        & .text {
+
+        }
+    }
+}
