@@ -1,0 +1,47 @@
+header {
+
+    & .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        max-height: max-content;
+        max-width: 100dvw;
+        padding: .5rem;
+        background-color: rgba(255, 255, 255, 0.25);
+        box-shadow: 0 0 1rem 1rem #ecadad;
+
+        & .navigation {
+            display: flex;
+            flex-direction: row;
+            column-gap: .25rem;
+
+            margin-top: .5rem;
+
+            & .link {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+
+                width: 6rem;
+                text-decoration: none;
+                border-bottom-color: transparent;
+                border-bottom-style: solid;
+
+                &:hover {
+                    border-color: white;
+                    border-bottom-style: solid;
+
+                    & p {
+                        translate: 0 -.5rem;
+                    }
+                }
+
+                & p {
+                    margin: 0;
+                    color: black;
+                }
+            }
+        }
+    }
+}
