@@ -27,15 +27,15 @@ main {
                 text-align: center;
                 width: max-content;
 
+                position: relative;
+                animation: bounce 0.5s infinite;
+
                 & .button {
                     text-decoration: none;
                     border-radius: 2rem;
                     padding-block: .5rem;
                     padding-inline: 2rem;
                     font-weight: bold;
-
-                    position: relative;
-                    animation: bounce 0.5s infinite;
                 }
 
                 &:nth-of-type(1) {
