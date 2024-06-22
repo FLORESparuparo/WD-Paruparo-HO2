@@ -52,7 +52,7 @@ main {
                     border-radius: 1rem;
                     height: 12rem;
                     width: 10rem;
-                    transition: 0.5s;
+                    transition: 0.7s;
 
                     & .name {
                         margin: 0;
@@ -63,7 +63,7 @@ main {
                         width: inherit;
                         height: 10rem;
                     }
-                    
+
                     &:hover {
                         transform: scale(1.7) rotateY(180deg);
                         background-color: #00000069;
