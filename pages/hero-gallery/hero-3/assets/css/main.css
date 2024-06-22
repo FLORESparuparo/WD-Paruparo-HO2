@@ -10,7 +10,12 @@ main {
 
         & .classes {
             display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 4rem;
+            justify-self: end;
 
+            width: max-content;
             backdrop-filter: blur(2px);
             border-radius: 2rem;
             border-style: solid;
@@ -18,22 +23,58 @@ main {
             border-color: #00000069;
 
             & .card {
-                height: 12rem;
-                width: 8rem;
-                background-color: white;
                 border-radius: 2rem;
+                text-align: center;
+                width: max-content;
 
                 & .button {
                     text-decoration: none;
+                    border-radius: 2rem;
+                    padding-block: .5rem;
+                    padding-inline: 2rem;
+                    font-weight: bold;
 
-                    &:nth-of-type(1) {
+                    position: relative;
+                    animation: bounce 0.5s infinite;
+                }
 
+                &:nth-of-type(1) {
+
+                    & .button {
+                        background-color: blueviolet;
+                        color: white;
+                    }
+                }
+
+                &:nth-of-type(2) {
+
+                    & .button {
+                        background-color: crimson;
+                        color: white;
+                    }
+                }
+
+                &:nth-of-type(3) {
+
+                    & .button {
+                        background-color: orange;
+                        color: black;
+                    }
+                }
+
+                &:nth-of-type(4) {
+
+                    & .button {
+                        background-color: green;
+                        color: white;
                     }
                 }
             }
 
-            & {
-                
+            @keyframes bounce {
+                25% {top: 0px;}
+                50% {top: -15px;}
+                75% {top: 0px;}
             }
         }
 
