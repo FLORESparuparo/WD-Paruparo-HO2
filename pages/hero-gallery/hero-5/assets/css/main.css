@@ -8,10 +8,20 @@ main {
         & .pick_side {
             display: grid;
             grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto;
             justify-content: space-between;
 
             height: inherit;
             width: 100%;
+
+            & .logo {
+                grid-column-start: 2;
+
+                align-self: center;
+                justify-self: center;
+
+                height: 50%;
+            }
 
             & a {
                 align-content: center;
@@ -20,25 +30,88 @@ main {
                 color: white;
                 text-decoration: none;
 
-                &.blue_side {
-                    border-top-left-radius: 8rem;
-                    border-bottom-left-radius: 8rem;
-                    padding-left: 8rem;
-    
-                    box-shadow: inset -.75rem 0 3.5rem deepskyblue;
-                }
-
                 &.red_side {
+                    grid-column-start: 1;
+                    grid-row: 1 / span 3;
                     border-top-right-radius: 8rem;
                     border-bottom-right-radius: 8rem;
                     padding-right: 8rem;
     
                     box-shadow: inset .75rem 0 3.5rem crimson;
                 }
+
+                &.blue_side {
+                    grid-column-start: 3;
+                    grid-row: 1 / span 3;
+                    border-top-left-radius: 8rem;
+                    border-bottom-left-radius: 8rem;
+                    padding-left: 8rem;
+    
+                    box-shadow: inset -.75rem 0 3.5rem deepskyblue;
+                }
             }
 
             & .card {
-                background
+                grid-column-start: 2;
+
+                display: flex;
+                align-self: center;
+                align-items: center;
+                justify-content: center;
+                column-gap: 4rem;
+
+                height: max-content;
+                width: max-content;
+                border-radius: 1rem;
+                box-shadow: inset 0 0 8rem darkorchid;
+                color: white;
+                font-size: 2.5rem;
+                backdrop-filter: blur(4px);
+
+                & .button {
+                    display: flex;
+                    column-gap: 2rem;
+                    text-decoration: none;
+
+                    height: max-content;
+                    transition: 0.5s;
+
+                    & p {
+                        margin: 0;
+                        transition: 0.5s;
+
+                        &.arrow {
+                            color: transparent;
+                            text-shadow: 0 0;
+                        }
+                    }
+
+                    &:nth-of-type(1) {
+                        color: crimson;
+                        text-shadow: 4px 2px black;
+
+                        &:hover {
+
+                            & .arrow {
+                                translate: -3rem;
+                                color: white;
+                            }
+                        }
+                    }
+
+                    &:nth-of-type(2) {
+                        color: deepskyblue;
+                        text-shadow: 4px 2px black;
+                        
+                        &:hover {
+
+                            & .arrow {
+                                translate: 3rem;
+                                color: white;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

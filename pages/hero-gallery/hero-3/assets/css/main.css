@@ -52,7 +52,7 @@ main {
                     border-radius: 1rem;
                     height: 12rem;
                     width: 10rem;
-                    transition: 0.3s;
+                    transition: 0.5s;
 
                     & .portrait {
                         width: inherit;
@@ -60,7 +60,7 @@ main {
                     }
 
                     &:hover {
-                        transform: scale(1.7);
+                        transform: scale(1.7) rotateY(360deg);
                         background-color: #00000069;
                         color: white;
                     }
@@ -112,7 +112,7 @@ main {
             }
         }
 
-        & .download {
+        & .play_game {
             display: flex;
             justify-self: end;
 
@@ -130,6 +130,11 @@ main {
                 padding-block: .5rem;
                 margin-right: 4rem;
                 font-size: 36px;
+                transition: 0.5s;
+
+                &:hover {
+                    transform: skew(-20deg) scale(1.1);
+                }
             }
         }
     }

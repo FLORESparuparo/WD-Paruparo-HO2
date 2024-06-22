@@ -1,0 +1,49 @@
+footer {
+
+    & .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-top: 6rem;
+        padding-block: 1rem;
+        background-color: peachpuff;
+
+        & .socials {
+            justify-self: center;
+
+            margin-bottom: 2rem;
+            padding: .5rem;
+            background-color: burlywood;
+            border-radius: 64rem;
+
+            & .navigation {
+                display: flex;
+                flex-direction: row;
+                column-gap: 1rem;
+
+                & .link {
+                    height: 2rem;
+                    transition: .3s;
+
+                    & .icon {
+                        height: inherit;
+                    }
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+
+                    &:active {
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
+
+        & p {
+            margin: 0;
+            color: black;
+        }
+    }
+}

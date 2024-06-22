@@ -1,0 +1,44 @@
+header {
+
+    & .container {
+        background-color: peachpuff;
+        width: 100%;
+        padding-block: .25rem;
+
+        & .navigation {
+            display: grid;
+            grid-template-columns: auto max-content auto;
+            align-items: center;
+            justify-content: center;
+            column-gap: 3rem;
+
+            & .button {
+                text-decoration: none;
+                color: black;
+                background-color:burlywood;
+                padding: .7rem 1rem;
+                border-radius: 2rem;
+                width: 6rem;
+                text-align: center;
+                transform: scale(0.9);
+                transition: 0.3s;
+
+                &:hover {
+                    background-color:sandybrown;
+                    transform: scale(1.07);
+                }
+            }
+
+            & .logo {
+                width: 3.5rem;
+                height: 3.5rem;
+                border-radius: 3rem;
+                transition: 0.7s;
+
+                &:hover {
+                    transform: rotateZ(360deg);
+                }
+            }
+        }
+    }
+}
