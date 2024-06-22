@@ -1,0 +1,19 @@
+footer {
+
+    & .container {
+        display: flex;
+        justify-content: center;
+
+        & .text {
+            display: flex;
+            align-items: center;
+            column-gap: 4rem;
+
+            height: max-content;
+
+            & p {
+                margin: 0;
+            }
+        }
+    }
+}

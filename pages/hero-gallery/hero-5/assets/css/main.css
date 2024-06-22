@@ -1,0 +1,45 @@
+main {
+
+    & .container {
+        display: flex;
+
+        height: 100%;
+
+        & .pick_side {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-content: space-between;
+
+            height: inherit;
+            width: 100%;
+
+            & a {
+                align-content: center;
+
+                height: inherit;
+                color: white;
+                text-decoration: none;
+
+                &.blue_side {
+                    border-top-left-radius: 8rem;
+                    border-bottom-left-radius: 8rem;
+                    padding-left: 8rem;
+    
+                    box-shadow: inset -.75rem 0 3.5rem deepskyblue;
+                }
+
+                &.red_side {
+                    border-top-right-radius: 8rem;
+                    border-bottom-right-radius: 8rem;
+                    padding-right: 8rem;
+    
+                    box-shadow: inset .75rem 0 3.5rem crimson;
+                }
+            }
+
+            & .card {
+                background
+            }
+        }
+    }
+}

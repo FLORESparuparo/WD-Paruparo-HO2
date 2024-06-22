@@ -1,0 +1,23 @@
+footer {
+
+    & .container {
+        display: flex;
+        justify-content: center;
+
+        & .text {
+            display: flex;
+            align-items: center;
+            column-gap: 4rem;
+
+            width: max-content;
+            background-color: #ffffff40;
+            border-radius: 4rem;
+            padding-inline: 1rem;
+            box-shadow: 0 0 1rem 4px #ffffff60;
+
+            & p {
+                margin: 0;
+            }
+        }
+    }
+}

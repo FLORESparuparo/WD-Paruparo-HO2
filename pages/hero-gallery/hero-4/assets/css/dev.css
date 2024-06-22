@@ -1,0 +1,16 @@
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+    height: 100vh;
+    margin: 0;
+
+    background: url("../img/Haikyuu-Battle-At-The-Garbage-Dump.webp") no-repeat center center/cover;
+}
+
+/* dev  *//*
+* {
+    border-color: rgba(255, 0, 0, 0.5);
+    border-width: 1px;
+    border-style: dashed;
+}

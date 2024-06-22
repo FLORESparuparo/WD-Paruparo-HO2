@@ -51,7 +51,7 @@ main {
             & .navigation {
                 display: flex;
                 justify-content: center;
-                column-gap: 3rem;
+                column-gap: 6rem;
                 margin-top: 2.5rem;
 
                 & a {
@@ -60,6 +60,7 @@ main {
                     text-decoration: none;
                     color: black;
                     background-color: #ecadad;
+                    box-shadow: 0 0 1rem 1px indianred;
                     padding: .5rem;
                     border-radius: 1rem;
                     transition: .3s;

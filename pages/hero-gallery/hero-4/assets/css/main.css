@@ -1,0 +1,89 @@
+main {
+
+    & .container {
+        display: grid;
+        justify-items: center;
+        row-gap: 4rem;
+
+        padding-block: 2rem;
+
+        & .card {
+            display: flex;
+            flex-direction: column;
+
+            width: 25%;
+            color: black;
+            background-color: transparent;
+            border-radius: 2rem;
+            border-top-style: solid;
+            border-left-style: solid;
+            border-width: 2px;
+            border-color: #ffffff40;
+            padding-block: 1rem;
+            box-shadow: 1rem 1rem 4px #00000088;
+            backdrop-filter: blur(8px);
+
+            & .title {
+                align-self: center;
+
+                width: 75%;
+            }
+
+            & .subtitle {
+                align-self: center;
+
+                margin-top: 0;
+            }
+
+            & .description {
+                display: flex;
+                flex-direction: column-reverse;
+                align-self: center;
+
+                width: 24rem;
+                margin-inline: 0;
+                text-align: center;
+            }
+
+            & .navigation {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                row-gap: 1rem;
+
+                margin-top: 2rem;
+
+                & .button{
+                    text-decoration: none;
+                    box-shadow: 0 0 .5rem 1px dimgray;
+
+                    &:nth-of-type(1) {
+                        color: white;
+                        background-color: orangered;
+                        font-size: 1.5rem;
+                        padding: 1rem 2rem;
+                        border-radius: 1rem;
+                    }
+
+                    &:nth-of-type(2) {
+                        color: orangered;
+                        background-color: white;
+                        font-size: 1rem;
+                        padding: .5rem 1rem;
+                        border-radius: .7rem;
+                    }
+                }
+            }
+        }
+
+        & .trailer {
+
+            & .video_link {
+                width: 560px;
+                height: 315px;
+                box-shadow: 1rem 1rem 4px #00000088;
+                border-radius: 1.5rem;
+            }
+        }
+    }
+}
