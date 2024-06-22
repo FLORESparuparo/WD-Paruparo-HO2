@@ -54,15 +54,24 @@ main {
                     width: 10rem;
                     transition: 0.5s;
 
+                    & .name {
+                        margin: 0;
+                    }
+
+
                     & .portrait {
                         width: inherit;
                         height: 10rem;
                     }
-
+                    
                     &:hover {
-                        transform: scale(1.7) rotateY(360deg);
+                        transform: scale(1.7) rotateY(180deg);
                         background-color: #00000069;
                         color: white;
+
+                        & .name, & .portrait {
+                            transform: rotateY(180deg);
+                        }
                     }
 
                     &:nth-of-type(1):hover .portrait {
